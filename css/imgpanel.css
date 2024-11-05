@@ -1,0 +1,93 @@
+.slide {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 40px auto;
+    position: relative;
+}
+
+.panel {
+    width: 500%;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    border: 1px solid #f00;
+}
+
+.panel li {
+    width: 100%;
+    height: 100%;
+}
+
+.panel li:nth-child(1) {
+    background: url(./../img/pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel li:nth-child(2) {
+    background: url(./../img/pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel li:nth-child(3) {
+    background: url(./../img/pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel li:nth-child(4) {
+    background: url(./../img/pic4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel li:nth-child(5) {
+    background: url(./../img/pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navi {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.navi li {
+    width: 40px;
+    height: 4px;
+    background-color: #ffcbcb;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.navi li.on {
+    background-color: #f00;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    color: #f00;
+    font-size: 30px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
